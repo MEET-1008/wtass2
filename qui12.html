@@ -1,0 +1,32 @@
+    
+    Define the Keyframes
+    Keyframes are the intermediate steps of the animation. They define the styles that an element should have at specific points during the animation. Keyframes are created using the @keyframes rule, followed by a name that you choose for your animation. Inside the @keyframes rule, you define the percentage of the animation's duration and the styles that the element should have at each percentage point.
+    
+    Once you've defined the keyframes, you need to apply the animation to the desired element using the animation property.
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @keyframes moveRight {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(200px);
+      }
+    }
+
+    .square {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      animation: moveRight 2s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="square"></div>
+</body>
+</html>

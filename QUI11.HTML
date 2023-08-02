@@ -1,0 +1,30 @@
+      timing-function: This is the easing function that determines how the transition progresses over time. It can be one of the following values:
+      
+      linear: The transition progresses at a constant speed.
+      ease: The transition starts slowly, accelerates, and then slows down at the end.
+      ease-in: The transition starts slowly and accelerates.
+      ease-out: The transition starts quickly and decelerates.
+      ease-in-out: The transition starts slowly, accelerates, and then decelerates.
+
+      
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: width 1s ease-in-out;
+    }
+
+    .box:hover {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
